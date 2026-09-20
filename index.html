@@ -7,17 +7,46 @@
         <meta name="author" content="shozanthebozan">
         <meta name="description" content="A website I made to test my html skills, and to explain why I switched from Arch Linux to Fedora Linux">
         <meta name="keywords" content="Fedora Linux, Arch Linux, Linux, aic8800d80">
+        <style>
+            .arch-updates 
+            {
+                
+                float: right;
+                width: 30%;
+                margin: 0 0 1rem 1.5rem;
+                text-align: center;
+            }
+            nav
+            {
+                background-color: bisque;
+                width: max-content;
+                padding: 5px;
+                border-radius: 5px;
+            }
+            .headings
+            {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            p
+            {
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            li
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
     </head>
-    <body>
+    <body style="background-color: rgb(133, 121, 63);" >
         <header>
-            <h1>Why I switched from Arch Linux to Fedora Linux</h1>
+            <h1 class="headings">Why I switched from Arch Linux to Fedora Linux</h1>
             <p>Arch Linux was my first permanent Linux distro, I used it because I kept hearing it on social media. I didn't install it the hard way though, I used <code>archinstall</code>.
                 The reason for switching to Fedora basically is because an update broke my out of tree aic8800d80 usb wifi driver, but I did always have other issues with Arch too.
             </p>
         </header>
         <main>
             <section>
-                <h2>What happened that ultimately pushed me away from Arch Linux</h2>
+                <h2 class="headings">What happened that ultimately pushed me away from Arch Linux</h2>
                 <p>
                     So, I ran <code>checkupdates</code> and saw that some linux firmware updates and some others are out, so of course, I 
                     ran <code>sudo pacman -Syu</code>. When i rebooted my aic8800d80 usb wifi kept saying my wifi password was wrong. That took me 2 days to fix
@@ -29,19 +58,20 @@
             </section>
             
             <section>
-                <h2>Other things that were also pushing me away from Arch</h2>
-                <figure>
-                <figcaption align="right"><strong>The Arch updates that broke my wifi</strong></figcaption>
-                <img src="assets/ArchBreakUpdates.png" width="20%" align="right" alt="My Arch updates that broke my wifi">
+                <h2 class="headings">Other things that were also pushing me away from Arch</h2>
+                 <figure class="arch-updates">
+                    <img src="assets/ArchBreakUpdates.png" width="100%" alt="My Arch updates that broke my wifi">
+                    <figcaption><strong>The Arch updates that broke my wifi</strong></figcaption>
                 </figure>
                 <p>I was running Arch on a pc that I daily drive, and that ain't good. I always had to scroll the archlinux
                     subreddit before a Linux kernal update because I couldn't afford breaking my system. Another thing was that
                     clicking links in many apps wouldn't open them or instead save to my cache, which was really annoying.
                 </p>
+               
             </section>
             
             <section>
-                <h2>Why I specifically chose Fedora Linux</h2>
+                <h2 class="headings">Why I specifically chose Fedora Linux</h2>
                 <p>You're probably thinking why I specifically chose Fedora, that is because mainly of its update system.
                     This is in between Debian, which takes years to update to update to newer versions,
                     and Arch, which is almost always unstable and updates almost every day.
@@ -50,9 +80,11 @@
             </section>
             
             <section>
-            <h2>Benefits I gained from switching to Fedora Linux</h2>
+            <h2 class="headings">Benefits I gained from switching to Fedora Linux</h2>
             
-                <h3>Switching to Fedora Linux gave me a bunch of benefits, including:</h3>
+                <h3 style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                    Switching to Fedora Linux gave me a bunch of benefits, including:
+                </h3>
             <ul>
                 <li>Clicking links actually works</li>
                 <li>I can daily drive it without issues</li>
@@ -63,7 +95,7 @@
             </section>
         </main>
         <footer>
-            <h3>Links:</h3>
+            <h3 class="headings">Links:</h3>
             <nav>
                 <a href="https://fedoraproject.org">Fedora Linux</a><br>
                 <a href="https://github.com/shozanthebozan">My GitHub profile</a>
